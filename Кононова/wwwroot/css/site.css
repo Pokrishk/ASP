@@ -1,0 +1,51 @@
+html {
+    font-size: 14px;
+}
+body {
+    background-color: ivory;
+}
+.carditem{
+    width:400px;
+    height:400px;
+}
+.subm {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.ban {
+    width: 100%; 
+    height: auto;  
+}
+.txt {
+    font-size: 20px;
+    color: darkgoldenrod;
+}
+.tex {
+    color: darkgoldenrod;
+}
+.zag{
+    color: sienna;
+}
+
+.lead {
+    font-style: italic; 
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}

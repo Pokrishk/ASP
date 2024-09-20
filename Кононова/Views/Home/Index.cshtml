@@ -1,0 +1,151 @@
+﻿@{
+    ViewData["Title"] = "Главная страница";
+    string[] brands = ViewData["Brands"] as string[];
+}
+<div class="text-center tex">
+    <img class="ban" src="~/media/ban.jpg"/>
+    <h1 class="display-4 zag">Добро пожаловать в Le Parfum!</h1>
+    <p class="lead">Изысканные ароматы от лучших мировых брендов</p>
+    <h4>На сегодняшний день: @DateTime.Now.ToLongDateString() нам магазин сотрудничает с @brands.Length брендами!</h4>
+    <div class="container mt-4">
+        <h2 calss="zag">Популярные бренды</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="~/media/6492740028.jpg" class="card-img-top carditem" alt="Chanel">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Chanel</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="~/media/dior.jpg" class="card-img-top carditem" alt="Dior">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Dior</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="~/media/Guerlain.jpg" class="card-img-top carditem" alt="Guerlain">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Guerlain</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="~/media/tomford.png" class="card-img-top carditem" alt="Tom Ford">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Tom Ford</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="~/media/Hermes.png" class="card-img-top carditem" alt="Hermès">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Hermès</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="~/media/YvesSaintLaurent.png" class="card-img-top carditem" alt="Yves Saint Laurent">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Yves Saint Laurent</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="~/media/CalvinKlein.png" class="card-img-top carditem" alt="Calvin Klein">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Calvin Klein</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="~/media/Dolce&Gabbana.jpg" class="card-img-top carditem" alt="Dolce & Gabbana">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Dolce & Gabbana</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="~/media/Versace.jpg" class="card-img-top carditem" alt="Versace">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Versace</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <h2 class="zag">Почему выбирают нас?</h2>
+        <p class="txt">
+            Мы предлагаем широкий ассортимент оригинальных парфюмерных композиций, созданных лучшими парфюмерами мира. В нашем магазине вы найдете ароматы на любой вкус и для любых ситуаций: от утонченных и легких до насыщенных и экзотических.
+        </p>
+        <p class="txt">
+            Наша цель – сделать ваш выбор максимально комфортным. Мы гарантируем качественное обслуживание, быструю доставку и только оригинальные товары.
+        </p>
+    </div>
+
+    <div class="container mt-4 text-center">
+        <h2 class="zag">Станьте частью нашей ароматной семьи!</h2>
+        <p class="txt">
+            Зарегистрируйтесь и получите эксклюзивные предложения, скидки и доступ к новым ароматам раньше всех. <br>
+            Ощутите привилегии наших постоянных клиентов:
+        </p>
+        <ul class="list-group list-group-flush text-left d-inline-block txt">
+            <li class="list-group-item tex zag">Персональные рекомендации по ароматам</li>
+            <li class="list-group-item tex zag">Скидки до 20% на первую покупку</li>
+            <li class="list-group-item tex zag">Ранний доступ к новым коллекциям</li>
+            <li class="list-group-item tex zag">Участие в закрытых распродажах и акциях</li>
+            <li class="list-group-item tex zag">Бесплатные образцы парфюма</li>
+        </ul>
+        <p class="mt-4 txt">
+            Не упустите возможность стать частью нашего сообщества любителей уникальных ароматов!
+        </p>
+    </div>
+
+    <div class="container mt-4">
+        <h2 class="text-center zag">Регистрация</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group mb-3">
+                        <label for="username">Имя пользователя</label>
+                        <input type="text" class="form-control" id="username" placeholder="Введите ваше имя пользователя" required>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="email">Электронная почта</label>
+                        <input type="email" class="form-control" id="email" placeholder="Введите вашу почту" required>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="password">Пароль</label>
+                        <input type="password" class="form-control" id="password" placeholder="Придумайте пароль" required>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="confirm-password">Подтвердите пароль</label>
+                        <input type="password" class="form-control" id="confirm-password" placeholder="Подтвердите пароль" required>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 subm">
+                <div class="form-group form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="newsletter">
+                    <label class="form-check-label" for="newsletter">Я хочу получать новости и специальные предложения на почту</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg w-100">Зарегистрироваться</button>
+            </div>
+        </div>
+    </div>
+</div>
